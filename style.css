@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'light italic';
+    src: url(fonts/source-sans-pro/SourceSansPro-LightItalic.ttf);
+}
 body{
     display: flex;
     flex-direction: column;
@@ -9,8 +12,6 @@ body{
 .title{
     font-weight: bold;
     font-size: 30px;
-    
-
 }
 .header{
     padding: 15px;
@@ -24,7 +25,10 @@ body{
     justify-content: space-between;
     
 }
-
+.header-links{
+     display: flex;
+     gap: 15px;
+}
 .footer{
   padding: 15px;
   color: white;
@@ -66,7 +70,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(123, 125, 146);
     margin: 40px;
     margin-left: 60px;
     margin-right: 0;
@@ -74,7 +78,7 @@ body{
     min-height: 300px;
 }
 
-button{
+.signup > button{
     background-color: #3882F6;
     border-width: 0;
     width:90px;
@@ -89,16 +93,17 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90px;
-    color: black;
+    min-height: 0;
+    color: #1F2937;
     min-height: 200px;
+    padding-bottom: 40px;
 }
 
 .tiles-title{
     font-family:extra-bold;
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
-    margin-top: 80px;
+    margin-top: 40px;
     font-weight: bold;
     font-size: 25px;
 }
@@ -118,7 +123,7 @@ button{
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    gap:100px;
+    gap:50px;
 }
 
 .tile{
@@ -130,5 +135,76 @@ button{
     justify-content: center;
     align-items: center;
 }
+
+.quote-box{
+    min-height: 0;
+    padding: 40px;
+    color: #1F2937;
+    background-color: #E5E7EB;
+
+}
+.quote{
+    font-size: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'light italic';
+}
+.quote-author{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.call-to-action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.call-to-action{
+    width: 700px;
+    height: 100px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.sign-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sign-button > button{
+    
+    background-color: #3882F6;
+    border-color: azure;
+    
+    border-style: solid;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: azure;
+}
+.call-to-action > .content{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    margin-left: 40px;
+
+
+}
+
 
 
